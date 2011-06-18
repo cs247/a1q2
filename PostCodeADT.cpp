@@ -43,13 +43,7 @@ private:
 // check whether whether test harness command has a second operand
 bool anotherOperand(stringstream &inputSS) {
 	char space = inputSS.peek();
-
-	if ( inputSS.eof() || space != ' ' ) {
-		return false;
-	}
-	else {
-		return true;
-	}
+	return ( !inputSS.eof() && space == ' ' );
 }
 
 
