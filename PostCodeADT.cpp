@@ -19,12 +19,12 @@ class PostCode {
 public:
 	PostCode();				    // Construct unset postal code 
 	~PostCode();				    // Destructor 
-	std::string postcode() const;		    // Accessor
-	bool postcodeIs(std::string p);		    // Mutator
+	string postcode() const;		    // Accessor
+	bool postcodeIs(string p);		    // Mutator
 	bool isUnset() const;			    // Test if postal code is unset
 	
 private:
-	std::string *postcode_;
+	string *postcode_;
 	PostCode& operator=(const PostCode&);	    // Disable assignment
 };
 
